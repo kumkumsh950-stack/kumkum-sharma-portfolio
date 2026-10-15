@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ecfdf5" />
+      <stop offset="50%" stop-color="#ccfbf1" />
+      <stop offset="100%" stop-color="#e0f2fe" />
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d9488" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+  </defs>
+  <!-- Background circle -->
+  <circle cx="120" cy="120" r="114" fill="url(#bgGrad)" stroke="#14b8a6" stroke-width="4" stroke-dasharray="6 4" />
+  
+  <!-- Subtle DNA Strand Background Motif -->
+  <path d="M40,50 Q70,70 100,50 T160,50 T220,50" fill="none" stroke="#0d9488" stroke-width="2" opacity="0.3" />
+  <path d="M40,70 Q70,50 100,70 T160,70 T220,70" fill="none" stroke="#0284c7" stroke-width="2" opacity="0.3" />
+
+  <!-- Shoulders & Lab Coat -->
+  <path d="M50,225 C50,175 80,165 120,165 C160,165 190,175 190,225 Z" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" />
+  <!-- Coat Lapels -->
+  <path d="M100,165 L120,205 L140,165" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5" />
+  <path d="M120,205 L120,225" stroke="#94a3b8" stroke-width="1.5" />
+  <!-- Stethoscope / ID Card Badge -->
+  <rect x="145" y="180" width="18" height="26" rx="2" fill="#0d9488" />
+  <rect x="148" y="185" width="12" height="6" rx="1" fill="#ffffff" />
+  <line x1="148" y1="196" x2="160" y2="196" stroke="#ffffff" stroke-width="1.5" />
+
+  <!-- Neck -->
+  <rect x="108" y="135" width="24" height="35" rx="6" fill="#fcd34d" opacity="0.6" />
+
+  <!-- Head -->
+  <ellipse cx="120" cy="115" rx="34" ry="42" fill="#fed7aa" />
+
+  <!-- Hair -->
+  <path d="M85,115 C85,65 155,65 155,115 C155,125 152,145 150,150 C140,140 138,125 138,110 C138,95 102,95 102,110 C102,125 100,140 90,150 C88,145 85,125 85,115 Z" fill="url(#hairGrad)" />
+
+  <!-- Glasses (Student / Scientist look) -->
+  <circle cx="108" cy="114" r="10" fill="none" stroke="#0f172a" stroke-width="2" />
+  <circle cx="132" cy="114" r="10" fill="none" stroke="#0f172a" stroke-width="2" />
+  <line x1="118" y1="114" x2="122" y2="114" stroke="#0f172a" stroke-width="2" />
+
+  <!-- Eyes & Smile -->
+  <circle cx="108" cy="114" r="2.5" fill="#0f172a" />
+  <circle cx="132" cy="114" r="2.5" fill="#0f172a" />
+  <path d="M114,132 Q120,137 126,132" fill="none" stroke="#b45309" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Front Hair Fringe -->
+  <path d="M92,95 C110,85 130,85 148,95 C140,88 120,84 100,88 Z" fill="url(#hairGrad)" />
+
+  <!-- Science Badge Pill floating -->
+  <g transform="translate(140, 20)">
+    <rect width="78" height="26" rx="13" fill="url(#primaryGrad)" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.15))" />
+    <text x="39" y="17" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">🧬 B.Tech</text>
+  </g>
+</svg>
